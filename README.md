@@ -1,16 +1,16 @@
 # Getting Started With Selenium 
 ![selenium-seeklogo com](https://user-images.githubusercontent.com/86334640/159179899-f257312f-4a6f-4fed-bc7c-6b54bcac768f.svg)
 
-## The Guide :
+# The Guide :
 <ul>
   <li><a href="#requirements-">Requirements</a></li>
   <li><a href="#installing-selenium-">Installing Selenium</a></li>
   <li><a href="#installing-webdriver-">Installing webDriver</a></li>
   <li><a href="https://www.google.com">First line of code : Getting acess to your webDriver</a></li>
-  <li><a href="https://www.google.com">Driver Object</a></li>
+  <li><a href="https://www.google.com">How do I navigate to a website using Selenium ?</a></li>
 </ul>
 
-### Requirements :
+## Requirements :
 <ul>
   <li>Browser : Google Chrome, Microsoft Edge, Opera GX... </li>
   <li>Python : <a href="https://www.python.org/downloads/">Just click here and download it now</a></li>
@@ -19,7 +19,7 @@
   <li>Code Editor : VScode, Pycharm</li>
 </ul>
 
-### Installing Selenium :
+## Installing Selenium :
 <ul>
   <li>1. tap the start button (or click the start icon) to open the start menu</li>
   <li>2. type cmd and tap enter</li>
@@ -30,7 +30,7 @@
 pip install selenium 
 ``` 
 
-### Installing webDriver :
+## Installing webDriver :
 ##### Chrome WebDriver :
 <ul>
   <li>1. <a href="https://chromedriver.chromium.org/downloads">Click to Download it</a></li>
@@ -53,7 +53,7 @@ pip install selenium
 
    ![edge_web_driver](https://user-images.githubusercontent.com/86334640/159184841-b7f48044-7532-436e-a7bc-83a82bd4b258.PNG)
    
-### First Line Of Code : 
+## First Line Of Code : 
 ```
 from selenium import webdriver #importing the object webdriver from selenium
 # if you are using chrome webdriver
@@ -61,6 +61,15 @@ driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\
 # if you are using chrome webdriver
 driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\Program Files\msedgedriver.exe")
 ```
+## How do I navigate to a website using Selenium ?
+with the get metthod you can navigate to any website
+code :
+```
+driver.get("write the website link example : https://www.google.com")
+```
+
+
+
 
 
    
