@@ -104,24 +104,28 @@ driver.get(urlB)
 ## How do I find a web elements ?
 these are the most used methods to find a webelements: <br>
 these method will return a web element <br>
-## find_element_by_id()
+Note : first, add this line : 
+```
+from selenium.webdriver.common.by import By
+```
+## find_element(By.ID,value)()
 code:
 ```
-driver.find_element_by_id("type the id")
+driver.find_element(By.ID,"type the id")
 ```
-## find_element_by_class_name() <br>
+## find_element(By.CLASS_NAME,value) <br>
 Note : this method will return the first web element who has this class name 
 ```
-driver.find_element_by_class_name("type the class name")
+driver.find_element(By.CLASS_NAME,"type your class name")
 ```
-## find_element_by_name() <br>
+## find_element(By.NAME,value) <br>
 Note : this method will return the first web element who has this attribute name 
 ```
-driver.find_element_by_name("type the name")
+driver.find_element(By.NAME,"type your name") 
 ```
-## find_element_by_css_selector()
+## find_element(By.CSS_SELECTOR,value) 
 ```
-driver.find_element_by_css_selector("type css selector")
+driver.find_element(By.CSS_SELECTOR,"type your css selector") 
 ```
 to get the css selector :
 
@@ -133,11 +137,11 @@ to get the css selector :
 
 <li>4. paste it in your code</li> <br>
 
-## find_element_by_xpath() 
+## find_element(By.XPATH,value)
 ```
-driver.find_element_by_xpath("type the xpath")
+driver.find_element(By.XPATH,"type your xpath")
 ```
-to get the css selector :
+to get the xpath :
 
 <li>1. right click on the web element</li>
 <li>2. hover on copy</li>
@@ -147,12 +151,28 @@ to get the css selector :
 
 <li>4. paste it in your code</li> <br>
 
-## find_element_by_tag_name() <br>
+## find_element(By.TAG_NAME,value) <br>
 Note : this method will return the first web element who has this tag
 ```
-driver.find_element_by_tag("type the tag")
+driver.find_element(By.TAG_NAME,"type your tag name")
 ```
-example : 
+example : <br>
+in this example we will localise the search input and type "hello from selenium" using <br>
+send_keys(value) <br>
+![Capture2](https://user-images.githubusercontent.com/86334640/159189421-02d1af6a-ce74-49f2-a4f7-5c6e920c138e.PNG)
+
 ```
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome (executable_path="D:\developpement\chromedriver.exe")
+driver.get("https://www.google.com")
+driver.find_element(By.CLASS_NAME, value="gLFyf").send_keys("hello from selenium")
+```
+to get this : <br>
+
+![Capture3](https://user-images.githubusercontent.com/86334640/159189538-48159899-b749-42b8-92d8-1089da5bb972.PNG)
+
+
+
 
 
