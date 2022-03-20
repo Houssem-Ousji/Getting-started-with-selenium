@@ -8,6 +8,9 @@
   <li><a href="#installing-webdriver-">Installing webDriver</a></li>
   <li><a href="https://www.google.com">First line of code : Getting acess to your webDriver</a></li>
   <li><a href="https://www.google.com">How do I navigate to a website using Selenium ?</a></li>
+  <li><a href="https://www.google.com">How do I close the webdriver ?</a></li>
+  <li><a href="https://www.google.com">How do I close the current window ?</a></li>
+  <li><a href="https://www.google.com">How do I open New window ?</a></li>
 </ul>
 
 ## Requirements :
@@ -62,15 +65,50 @@ driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\
 driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\Program Files\msedgedriver.exe")
 ```
 ## How do I navigate to a website using Selenium ?
-with the get metthod you can navigate to any website
+get() methode
 code :
 ```
 driver.get("write the website link example : https://www.google.com")
 ```
+## How do I close the webdriver ?
+quit() methode
+code :
+```
+driver.quit()
+```
+## How do I close the current window ?
+close() methode
+code :
+```
+driver.close()
+```
+## How do I open New window ?
+execute_script() method which is one of the ways of opening a new window than we use switch_to.window() methode to switch to a specific window
+code : 
+```
+driver.execute_script("window.open('');")
+```
+example :
+```
+from selenium import webdriver
+urlA = "https://www.google.com"
+urlB = "https://www.youtube.com"
+driver = webdriver.Chrome ("D:\developpement\chromedriver.exe")
+driver.get(urlA)
+# open new window with execute_script()
+driver.execute_script("window.open('');")
+# switch to new window with switch_to.window()
+driver.switch_to.window(driver.window_handles[1])
+driver.get(urlB)
+```
+## How do I find a web elements ?
+these are the most used methods to find a webelements:
+driver.find_element_by_id() 
 
 
-
-
-
-   
+driver.find_element_by_class_name()
+driver.find_element_by_name()
+driver.find_element_by_css_selector()
+driver.find_element_by_xpath()
+driver.find_element_by_tag_name()
 
