@@ -156,7 +156,7 @@ Note : this method will return the first web element who has this tag
 ```
 driver.find_element(By.TAG_NAME,"type your tag name")
 ```
-example : <br>
+## example : <br>
 in this example we will localise the search input and type "hello from selenium" using <br>
 send_keys(value) <br>
 ![Capture2](https://user-images.githubusercontent.com/86334640/159189421-02d1af6a-ce74-49f2-a4f7-5c6e920c138e.PNG)
@@ -172,7 +172,19 @@ to get this : <br>
 
 ![Capture3](https://user-images.githubusercontent.com/86334640/159189538-48159899-b749-42b8-92d8-1089da5bb972.PNG)
 
-
-
-
-
+## How do I send keyboard keys with selenium ?
+Note : first, add this line : 
+```
+from selenium.webdriver.common.keys import Keys
+```
+code :
+```
+send_keys(keyboard key)
+```
+example : 
+```
+send_keys(Keys.ENTER)
+send_keys(Keys.F3)
+send_keysKeys.ALT)
+send_keys(Keys.LEFT)
+```
