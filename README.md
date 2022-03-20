@@ -4,9 +4,9 @@
 ## The Guide :
 <ul>
   <li><a href="#requirements-">Requirements</a></li>
-  <li><a href="https://www.google.com">Installing Selenium</a></li>
-  <li><a href="https://www.google.com">Installing webDriver</a></li>
-  <li><a href="https://www.google.com">First line in code : Getting acess to your webDriver</a></li>
+  <li><a href="#installing-selenium-">Installing Selenium</a></li>
+  <li><a href="#installing-webdriver-">Installing webDriver</a></li>
+  <li><a href="https://www.google.com">First line of code : Getting acess to your webDriver</a></li>
   <li><a href="https://www.google.com">Driver Object</a></li>
 </ul>
 
@@ -52,6 +52,16 @@ pip install selenium
 </ul>
 
    ![edge_web_driver](https://user-images.githubusercontent.com/86334640/159184841-b7f48044-7532-436e-a7bc-83a82bd4b258.PNG)
+   
+### First Line Of Code : 
+```
+from selenium import webdriver #importing the object webdriver from selenium
+# if you are using chrome webdriver
+driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\Program Files\chromedriver.exe")
+# if you are using chrome webdriver
+driver = webdriver.Chrome("Put the absolute path of Your webdriver example : C:\Program Files\msedgedriver.exe")
+```
+
 
    
 
