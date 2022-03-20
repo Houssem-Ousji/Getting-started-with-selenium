@@ -6,11 +6,13 @@
   <li><a href="#requirements-">Requirements</a></li>
   <li><a href="#installing-selenium-">Installing Selenium</a></li>
   <li><a href="#installing-webdriver-">Installing webDriver</a></li>
-  <li><a href="https://www.google.com">First line of code : Getting acess to your webDriver</a></li>
-  <li><a href="https://www.google.com">How do I navigate to a website using Selenium ?</a></li>
-  <li><a href="https://www.google.com">How do I close the webdriver ?</a></li>
-  <li><a href="https://www.google.com">How do I close the current window ?</a></li>
-  <li><a href="https://www.google.com">How do I open New window ?</a></li>
+  <li><a href="#first-line-of-code-">First line of code : Getting acess to your webDriver</a></li>
+  <li><a href="#how-do-i-navigate-to-a-website-using-selenium-">How do I navigate to a website using Selenium ?</a></li>
+  <li><a href="#how-do-i-close-the-webdriver-">How do I close the webdriver ?</a></li>
+  <li><a href="#how-do-i-close-the-current-window-">How do I close the current window ?</a></li>
+  <li><a href="#how-do-i-open-new-window-">How do I open New window ?</a></li>
+  <li><a href="#how-do-i-find-a-web-elements-">How do I find a web elements ?</a></li>
+  <li><a href="#how-do-i-send-keyboard-keys-with-selenium-">How do I send keyboard keys with selenium ?</a></li>
 </ul>
 
 ## Requirements :
