@@ -102,13 +102,57 @@ driver.switch_to.window(driver.window_handles[1])
 driver.get(urlB)
 ```
 ## How do I find a web elements ?
-these are the most used methods to find a webelements:
-driver.find_element_by_id() 
+these are the most used methods to find a webelements: <br>
+these method will return a web element <br>
+## find_element_by_id()
+code:
+```
+driver.find_element_by_id("type the id")
+```
+## find_element_by_class_name() <br>
+Note : this method will return the first web element who has this class name 
+```
+driver.find_element_by_class_name("type the class name")
+```
+## find_element_by_name() <br>
+Note : this method will return the first web element who has this attribute name 
+```
+driver.find_element_by_name("type the name")
+```
+## find_element_by_css_selector()
+```
+driver.find_element_by_css_selector("type css selector")
+```
+to get the css selector :
 
+<li>1. right click on the web element</li>
+<li>2. hover on copy</li>
+<li>3. click to "Copy selector"</li> <br> 
+  
+![Capture1](https://user-images.githubusercontent.com/86334640/159187768-14ff57e5-73a0-4f09-b8fc-d3bf418d0ce2.PNG)
 
-driver.find_element_by_class_name()
-driver.find_element_by_name()
-driver.find_element_by_css_selector()
-driver.find_element_by_xpath()
-driver.find_element_by_tag_name()
+<li>4. paste it in your code</li> <br>
+
+## find_element_by_xpath() 
+```
+driver.find_element_by_xpath("type the xpath")
+```
+to get the css selector :
+
+<li>1. right click on the web element</li>
+<li>2. hover on copy</li>
+<li>3. click to "Copy xpath"</li> <br> 
+
+![Capture1](https://user-images.githubusercontent.com/86334640/159187768-14ff57e5-73a0-4f09-b8fc-d3bf418d0ce2.PNG)
+
+<li>4. paste it in your code</li> <br>
+
+## find_element_by_tag_name() <br>
+Note : this method will return the first web element who has this tag
+```
+driver.find_element_by_tag("type the tag")
+```
+example : 
+```
+
 
