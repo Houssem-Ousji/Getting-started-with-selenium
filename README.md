@@ -3,11 +3,11 @@ your guide to the most popular library of testing and web scrapping in python, "
 
 this guide contains two sections :
 
-<a href="#">Course Section</a>
+<a href="https://github.com/Houssem-Ousji/Getting-started-with-selenium/blob/main/course.md">Course Section</a>
 
 the most used methods to work with selenium
 
-<a href="#">Application Section</a>
+<a href="https://github.com/Houssem-Ousji/Getting-started-with-selenium/tree/main/application">Application Section</a>
 
 the script get the data from <a href="https://www.automobile.tn/fr">https://www.automobile.tn/fr</a>
 <li>input : Car Brand (choosed from the list)</li>
