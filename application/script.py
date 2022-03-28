@@ -38,12 +38,8 @@ def main_program(brand_name):
             with open(f"{brand_name}.txt", "a", newline='') as file:
                 write = csv.writer(file, delimiter=';')
                 write.writerow([driver.find_element(By.TAG_NAME, "h3").get_property("innerText"),
-                                driver.find_element(By.CLASS_NAME, "version-img").find_element(By.TAG_NAME,
-                                                                                               "img").get_attribute(
-                                    "src"),
-                                driver.find_element(By.CLASS_NAME, "buttons").find_element(By.TAG_NAME,
-                                                                                           "div").get_property(
-                                    "innerText")])
+                                driver.find_element(By.CLASS_NAME, "version-img").find_element(By.TAG_NAME,"img").get_attribute("src"),
+                                driver.find_element(By.CLASS_NAME, "buttons").find_element(By.TAG_NAME,"div").get_property("innerText")])
         elif (test2):
             versions = driver.find_element(By.CLASS_NAME, "versions").find_elements(By.CLASS_NAME, "version")
             prices = driver.find_element(By.CLASS_NAME, "versions").find_elements(By.CLASS_NAME, "price")
@@ -51,11 +47,8 @@ def main_program(brand_name):
             while (i < len(versions)):
                 with open(f"{brand_name}.txt", "a", newline='') as file:
                     write = csv.writer(file, delimiter=';')
-                    write.writerow([driver.find_element(By.TAG_NAME, "h3").get_property("innerText") + " " + versions[
-                        i].get_property("innerText"),
-                                    driver.find_element(By.CLASS_NAME, "versions-img").find_element(By.TAG_NAME,
-                                                                                                    "img").get_attribute(
-                                        "src"),
+                    write.writerow([driver.find_element(By.TAG_NAME, "h3").get_property("innerText") + " " + versions[i].get_property("innerText"),
+                                    driver.find_element(By.CLASS_NAME, "versions-img").find_element(By.TAG_NAME,"img").get_attribute("src"),
                                     prices[i].get_property("innerText")])
                 i += 1
     print("Mission complete")
